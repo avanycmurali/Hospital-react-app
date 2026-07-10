@@ -5,6 +5,8 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import RegisterPatient from './components/RegisterPatient'
 import SearchPatient from './components/SearchPatient'
+import DischargePatient from './components/DischargePatient'
+import ViewPatient from './components/ViewPatient'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +15,8 @@ function App() {
     <>
       <RegisterPatient/>
       <SearchPatient/>
+      <DischargePatient/>
+      <ViewPatient/>
     </>
   )
 }
