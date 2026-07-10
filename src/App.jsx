@@ -7,16 +7,21 @@ import RegisterPatient from './components/RegisterPatient'
 import SearchPatient from './components/SearchPatient'
 import DischargePatient from './components/DischargePatient'
 import ViewPatient from './components/ViewPatient'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <RegisterPatient/>
-      <SearchPatient/>
-      <DischargePatient/>
-      <ViewPatient/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/'element={<RegisterPatient/>}/>
+        <Route path='/search'element={<SearchPatient/>}/>
+        <Route path='/delete'element={<DischargePatient/>}/>
+        <Route path='/view'element={<ViewPatient/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }

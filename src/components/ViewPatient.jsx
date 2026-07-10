@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const ViewPatient = () => {
      const[data,changeData]=useState(
@@ -128,6 +129,7 @@ const ViewPatient = () => {
   )
   return (
     <div>
+        <NavigationBar/>
 
 <table class="table">
   <thead>
